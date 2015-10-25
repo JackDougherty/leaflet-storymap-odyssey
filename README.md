@@ -1,19 +1,58 @@
-# leaflet-map-story-odyssey
-Modified Odyssey.js storymap template with Leaflet
+# leaflet-storymap-odyssey
+Modified version of CartoDB Odyssey.js story map template with Leaflet
 
 ## Credit
 Original source: https://github.com/CartoDB/odyssey.js/blob/master/LICENSE
 
 ## Demo
-http://jackdougherty.github.io/leaflet-map-story-odyssey
+http://jackdougherty.github.io/leaflet-storymap-odyssey
+
+## Pros:
+- Convenient online sandbox and downloadable code
+- Easy to learn markdown syntax to create slides
+- Display multiple markers, photos, videos in story
+- option to display one CartoDB vizjson for the entire slideshow
 
 ##To Do
+- Center the Prev/Next arrows < > and the Dots div (••••)
+- add L.layerControl to toggle on/off multiple basemaps and overlays?
+- Test embed for images, video, soundcloud
+- Experiment with Odyssey.js Advanced Sandbox and Javascript API features: http://cartodb.github.io/odyssey.js/documentation/#advanced-use-of-the-sandbox
+- Can individual geojson objects be added to specific slides? See complex customized example at https://github.com/clhenrick/BushwickCommunityMap, which includes this code in intro.js to display rheingoldPoly geojson object:
+  ```
+  Bushwick includes this intro.js
+// check the index being returned by trackCurrentSlide()
+  function checkIndex(index) {
+    switch(index){
+      case 0 : slideZero();
+      break;
+      case 1 : slideOne();
+      break;
+      case 2 : slideTwo();
+      break;
+      . . .
+      default: console.log('out of slide counters');
+    }
+  }
 
-Experiment with Odyssey.js Advanced Sandbox and Javascript API http://cartodb.github.io/odyssey.js/documentation/#advanced-use-of-the-sandbox
+  function slideZero() {
+    el.map.setView(el.bushwick,15);
+    el.dobPermitsNB.hide();
+    el.taxLotActions['regular']();
+    el.taxLots.show();
+    el.featureGroup.clearLayers();
+  }
 
-Center the Prev/Next arrows < > and the Dots div (••••)
+  function slideOne() {
+    el.featureGroup.clearLayers();
+    el.featureGroup.addLayer(el.rheingoldPoly);
+    el.map.fitBounds(el.rheingoldPoly, {paddingTopLeft: [125, 35]});
+    el.taxLotActions['landuse']();
+    el.taxLots.show();
+  }
+  ```
 
-Redo the offsetHeight formula in index.html, which originally looked like this:
+- Adjust calculations in the offsetHeight formula in index.html, which originally looked like this:
 ```
 function adjustSlides() {
       var container = document.getElementById("slides_container"),
