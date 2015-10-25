@@ -1,13 +1,4 @@
-# leaflet-map-story-odyssey
-Modified Odyssey.js storymap template with Leaflet
-
-## Credit
-Original source: https://github.com/CartoDB/odyssey.js/blob/master/LICENSE
-
-## Demo
-http://jackdougherty.github.io/leaflet-map-story-odyssey
-
-##To Do
+##To-Do
 
 Experiment with Odyssey.js Advanced Sandbox and Javascript API http://cartodb.github.io/odyssey.js/documentation/#advanced-use-of-the-sandbox
 
