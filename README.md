@@ -10,14 +10,12 @@ http://jackdougherty.github.io/leaflet-storymap-odyssey
 ## Pros:
 - Convenient online sandbox and downloadable code
 - Easy to learn markdown syntax to create slides
-- Display multiple markers, photos, videos in story
-- option to display one CartoDB vizjson for the entire slideshow
+- Display multiple markers in map; links, photos in story
+- Option to display one CartoDB vizjson for the entire storymap
 
 ##To Do
-- Center the Prev/Next arrows < > and the Dots div (••••)
 - add L.layerControl to toggle on/off multiple basemaps and overlays?
-- Test embed for images, video, soundcloud
-- Experiment with Odyssey.js Advanced Sandbox and Javascript API features: http://cartodb.github.io/odyssey.js/documentation/#advanced-use-of-the-sandbox
+- Experiment with Odyssey.js Advanced Sandbox and Javascript API features (and test video, sound): http://cartodb.github.io/odyssey.js/documentation/#advanced-use-of-the-sandbox
 - Can individual geojson objects be added to specific slides? See complex customized example at https://github.com/clhenrick/BushwickCommunityMap, which includes this code in intro.js to display rheingoldPoly geojson object:
   ```
   Bushwick includes this intro.js

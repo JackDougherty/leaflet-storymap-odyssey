@@ -110,7 +110,8 @@
         var seq = O.Triggers.Sequential();
 
         var baseurl = this.baseurl = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
-        var map = this.map = L.map('map').setView([0, 0.0], 4);
+        // var map = this.map = L.map('map').setView([0, 0.0], 4);
+        var map = this.map = L.map('map');
         var basemap = this.basemap = L.tileLayer(baseurl).addTo(map);
 
         // customize source link to your GitHub repo
@@ -242,16 +243,28 @@
 <script id="md_template" type="text/template">```
 -title: "Story Map template"
 -author: "Jack Dougherty"
--vizjson: "https://jackdrty.cartodb.com/api/v2/viz/353b357c-468d-11e5-90eb-0e9d821ea90d/viz.json"
+-vizjson: "https://jackdrty.cartodb.com/api/v2/viz/fdce6e72-433c-11e5-86d5-0e49835281d6/viz.json"
 ```
 
-#Title 1 here
+#Title 1: Modified Odyssey.js Story Map
 ```
 - center: [41.76, -72.69]
 - zoom: 10
 L.marker([41.76, -72.69]).actions.addRemove(S.map)
 ```
-Text about Hartford, with lots of text, and lots of text, and with lots of text, and lots of text, and with lots of text, and lots of text, and with lots of text, and lots of text, and lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of text.
+See modified [code on GitHub](http://github.com/jackdougherty/leaflet-storymap-odyssey).
+
+Pros:
+
+Easy to learn markdown syntax to create slides
+
+Display multiple markers in map; links, photos, videos in story
+
+Option to display one CartoDB vizjson [such as these red polygons](http://cdb.io/1i6kMe7) for the entire slideshow
+
+See also [Odyssey.js documentation](http://cartodb.github.io/odyssey.js/documentation/) for Advanced markdown and JavaScript API
+
+Room for lots of text, and lots of text, and with lots of text, and lots of text, and with lots of text, and lots of text, and lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of textand lots of text, and with lots of text, and lots of text.
 
 #Title 2 here
 ```
@@ -267,7 +280,7 @@ Text about somewhere else
 - zoom: 12
 ```
 
-By default, images are also supported.
+Sample image below.
 
 ![New York](http://www.boston-discovery-guide.com/image-files/new-york-1.jpg)
 
@@ -279,14 +292,10 @@ and lots of text, and with lots of text, and lots of text and lots of text, and 
 - zoom: 3
 ```
 
-You have different options for exporting your odyssey.js visualization. You can either embed this using an iframe, publishing with a click on bl.ocks or just share the URL of this visualization.
-
-If you want to customize it further, you can download the generated source code by clicking on the button below.
+to come
 
 #Title 5 here
 
-Check out our [documentation](/odyssey.js/documentation/) to learn how to use odyssey to create more custom things. It's crazy the amount of cool things that can be done with the library.
-
-Also if you are a developer, take a look at our contributing guideline so you can push code to the actual library.
+to come
 
 </script></body></html>

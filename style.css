@@ -36,6 +36,7 @@ See readable portion further below */
 #slides_container a{color:#FF7373;text-decoration:none}
 #slides_container a:hover{text-decoration:underline}
 #front_slide.hidden{display:none}
+ul{text-align:center}
 #dots{margin:0 0 10px 0}
 #dots li{display:inline}
 #dots li a{opacity:0.2;color:#333}
@@ -43,11 +44,11 @@ See readable portion further below */
 #dots li a.active{opacity:1}
 #dots li a:hover{opacity:1;cursor:pointer;text-decoration:none}
 #slides_container img{margin:20px 0;max-width:100%}
-ul#navButtons{margin:5px 0 0 0}
+ul#navButtons{margin:5px 0 0 0;text-align:center}
 ul#navButtons li{width:30px;display:inline}
-ul#navButtons li a{display:inline-block;width:23px;height:30px;background:transparent url('navBtns.png') no-repeat -10px 0}
+ul#navButtons li a{display:inline-block;width:23px;height:30px;background:transparent url('img/navBtns.png') no-repeat -10px 0}
 ul#navButtons li a:hover{background-position:-10px -30px;cursor:pointer}
-ul#navButtons li a.next{background:transparent url('navBtns.png') no-repeat -30px 0}
+ul#navButtons li a.next{background:transparent url('img/navBtns.png') no-repeat -30px 0}
 ul#navButtons li a.next:hover{background-position:-30px -30px}
 /* credits are hidden with z-index:-1 */
 div#credits{position:absolute;bottom:0;left:0;right:0;height:44px;background-color:#FFF;z-index:-1}
